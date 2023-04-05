@@ -70,6 +70,33 @@ h1 {
     align-items: center;
 }
 
+.sobre {
+    background-color: white;
+    height: 400px;
+    text-align: right;
+}
+
+.staff {
+    display: flex;
+    height: 400px;
+}
+
+.conteudo-staff {
+    display: flex;
+
+}
+
+.conteudo-img {
+    display: flex;
+
+}
+
+.contato {
+    background-color: greenyellow;
+    height: 200px;
+    text-align: right;
+}
+
 
 footer {
     background-color: black;
