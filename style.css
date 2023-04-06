@@ -73,6 +73,16 @@ h1 {
     text-align: right;
 }
 
+.maps {
+    display: flex;
+    width: 50%; 
+    align-items: left;
+}
+
+.maps > iframe {
+    width: 140px;
+    height: 140px;
+}
 
 .home {
     background: url('img/background1.png') center center no-repeat fixed;
