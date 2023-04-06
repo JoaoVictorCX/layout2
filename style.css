@@ -12,7 +12,6 @@ header {
     display: flex;
     padding-top: 10px;
     padding-bottom: 10px;
-
 }
 
 header > img {
@@ -60,9 +59,22 @@ h1 {
 .conteudo {
     max-width: 800px;
     margin: auto;
+    display: flex;
 }
 
-.hero {
+.conteudo1 {
+    width: 50%;
+    
+}
+
+.conteudo2 {
+    width: 50%;
+    align-items: right;
+    text-align: right;
+}
+
+
+.home {
     background: url('img/background1.png') center center no-repeat fixed;
     height: 400px;  
     background-size: cover; 
@@ -71,9 +83,9 @@ h1 {
 }
 
 .sobre {
+    display: flex;
     background-color: white;
     height: 400px;
-    text-align: right;
 }
 
 .staff {
@@ -81,24 +93,11 @@ h1 {
     height: 400px;
 }
 
-.conteudo-staff {
-    display: flex;
-
-}
-
-.conteudo-img {
-    display: flex;
-
-}
-
-
-
 .contato {
+    display: flex;
     background-color: greenyellow;
     height: 200px;
-    text-align: right;
 }
-
 
 footer {
     background-color: rgb(49, 49, 49);
@@ -107,3 +106,4 @@ footer {
     height: 60px;
     
 }
+
