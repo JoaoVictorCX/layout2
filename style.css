@@ -54,7 +54,7 @@ nav {
 h1 {
     font-size: 4em;
     color: white;
-
+    text-shadow: 1px 1px 50px black;
 }
 
 .conteudo {
@@ -91,6 +91,8 @@ h1 {
 
 }
 
+
+
 .contato {
     background-color: greenyellow;
     height: 200px;
@@ -99,7 +101,9 @@ h1 {
 
 
 footer {
-    background-color: black;
+    background-color: rgb(49, 49, 49);
     color: white;
     display: flex;
+    height: 60px;
+    
 }
