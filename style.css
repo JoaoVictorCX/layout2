@@ -219,5 +219,9 @@ footer {
         margin-top: 30px;
         font-size: 1em;
     }
+
+    .icon-media {
+        justify-content: center;
+    }
 }
 
