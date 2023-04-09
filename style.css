@@ -208,6 +208,17 @@ footer {
         width: 100%;
         text-align: center;
     }
+
+    .conteudo1 > img {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+
+    .conteudo2 > img {
+        width: 250px;
+        margin-top: 30px;
+    }
+
     nav {
        
     }
