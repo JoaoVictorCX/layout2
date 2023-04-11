@@ -12,11 +12,12 @@ header {
     display: flex;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     position: fixed;
     left: 0px;
     right: 0px;
     top: 0px;
-    height: 60px;
     background-color: white;
 
 }
@@ -30,13 +31,31 @@ nav {
 
 
 
+.btn-menu-mobile {
+    z-index: 100;
+    display: none;
+    background-color: lightgrey;
+    padding: 12px 12px 9px 12px;
+    border-radius: 100%;
+    border: none;
+}
+
+
+.menu-close {
+    display: none;
+}
+
+
+
 a {
     text-decoration: none;
     color: white;
 }
 
 header > img {
-    padding-left: 20px;
+    width: 80px;
+    height: 80px;
+    
 }
 
 .btn-menu {
@@ -50,14 +69,6 @@ header > img {
     background-color: greenyellow;
     transition: 0.5s;
 }
-
-.logo {
-    width: 60px;
-    height: 60px;
-    background-color: red;
-}
-
-
 
 .menu {
     flex-grow: 1;
@@ -151,9 +162,10 @@ section {
 }
 
 .home {
-    margin-top: 60px;
+    margin-top: 100px;
     background: url('img/background1.png') center center no-repeat fixed;
     background-size: cover; 
+    background-position: center center;
     display: flex;
     align-items: center;
 }
@@ -195,7 +207,40 @@ footer {
     justify-content: center;
 }
 
+
+
+
 @media (max-width: 850px) {
+
+    .btn-menu-mobile {
+        display: block;
+        
+    }
+
+    .menu {
+        justify-content: right;
+    }
+
+    .menu-mobile {
+        display: none;
+        background-color: rgba(255, 255, 255, 0.918);
+        backdrop-filter: blur(7.5px);
+        -webkit-backdrop-filter: blur(7.5px); ;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 2em;
+    
+    }
+
+    .showmenu {
+        display: flex;
+    }
+
     .conteudo {
         width: 100%;
         flex-direction: column;
@@ -234,5 +279,6 @@ footer {
     .icon-media {
         justify-content: center;
     }
+
 }
 
