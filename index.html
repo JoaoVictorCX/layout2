@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link href="https://fonts.cdnfonts.com/css/akira-expanded" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Training</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/bxt.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -37,10 +39,10 @@
         <section class="home">
             <a class="ancora" style="top: -240px" id="home"></a>
             <div class="conteudo">
-                <div class="conteudo1">
+                <div data-aos="zoom-in-right" class="conteudo1">
                     <h1>SEU NOVO JEITO DE TREINAR</h1>                  
                 </div>   
-                <div class="conteudo2">
+                <div data-aos="zoom-in-left" class="conteudo2">
                     <button class="btn-verde">
                         <a href="https://bit.ly/2CZIesv" target="_blank">AGENDAR</a>
                     </button>
@@ -50,11 +52,11 @@
         
         <section class="sobre">
             <a class="ancora" id="sobre"></a>
-            <div class="conteudo">
+            <div data-aos="zoom-in-right" class="conteudo">
                 <div class="conteudo1">
                     <img src="img/sobre1.png" width="350px"  alt="imagem-camiseta">
                 </div>
-                <div class="conteudo2">
+                <div data-aos="zoom-in-left" class="conteudo2">
                     <h2>SOBRE</h2>
                     
                     <p>Somos uma academia de treinamento hibrido em grupo.</p>
@@ -69,7 +71,7 @@
         <section class="staff">
             <a class="ancora" id="staff"></a>
             <div class="conteudo">
-                <div class="conteudo1">
+                <div data-aos="zoom-in-right" class="conteudo1">
                     <h2>STAFF</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ullam quam numquam ab aut. Temporibus exercitationem, optio harum laboriosam quibusdam dolorem ullam dignissimos ea, deleniti corrupti fugit delectus earum architecto.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ullam quam numquam ab aut. Temporibus exercitationem, optio harum laboriosam quibusdam dolorem ullam dignissimos ea, deleniti corrupti fugit delectus earum architecto.</p>
@@ -78,7 +80,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ullam quam numquam ab aut. Temporibus exercitationem, optio harum laboriosam quibusdam dolorem ullam dignissimos ea, deleniti corrupti fugit delectus earum architecto.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ullam quam numquam ab aut. Temporibus exercitationem, optio harum laboriosam quibusdam dolorem ullam dignissimos ea, deleniti corrupti fugit delectus earum architecto.</p>
                 </div>
-                <div class="conteudo2">
+                <div data-aos="zoom-in-left" class="conteudo2">
                     <img src="img/joao.png" width="350px" alt="foto-joao">
                 </div>
             </div>
@@ -112,8 +114,10 @@
     <footer>
         <p>Teste por Thiago e João</p>
     </footer>
-    <script type="text/javascript" src="js/menu.js">
-
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>

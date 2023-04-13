@@ -1,3 +1,10 @@
+
+@import url('https://fonts.cdnfonts.com/css/akira-expanded');
+
+:root {
+    --title: 'Akira Expanded';
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -9,6 +16,7 @@ main {
 }
 
 header {
+    z-index: 99;
     display: flex;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -45,7 +53,7 @@ nav {
 
 
 .menu-close {
-    display: block;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 32px;
@@ -86,9 +94,9 @@ header > img {
 }
 
 h1 {
-    font-size: 4em;
-    color: white;
-    text-shadow: 1px 1px 50px black;
+    font-family: var(--title);
+    font-size: 3em;
+     color: white;
 }
 
 .conteudo {
@@ -102,6 +110,7 @@ h1 {
     background-color: greenyellow;
     border: none;
     font-weight: bold;
+    font-size: 1.4em;
     cursor: pointer;
     color: black;
 }
@@ -178,6 +187,7 @@ section {
     align-items: center;
 }
 
+
 .sobre {
     display: flex;
     background-color: white;
@@ -217,7 +227,7 @@ footer {
 
 
 
-@media (max-width: 850px) {
+@media (max-width: 765px) {
 
     .btn-menu-mobile {
         display: block;
@@ -241,11 +251,17 @@ footer {
         justify-content: center;
         flex-direction: column;
         font-size: 2em;
-    
     }
 
     .showmenu {
         display: flex;
+    }
+
+    .home {
+        height: 420px;
+        background-size: cover;
+        background-position: fixed;
+        background-attachment: local;
     }
 
     .conteudo {
@@ -271,9 +287,6 @@ footer {
         margin-top: 30px;
     }
 
-    nav {
-       
-    }
     .maps {
         margin-bottom: 20px;
         justify-content: center;
