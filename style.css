@@ -35,14 +35,22 @@ nav {
     z-index: 100;
     display: none;
     background-color: lightgrey;
-    padding: 12px 12px 9px 12px;
     border-radius: 100%;
     border: none;
 }
 
+.menu-open {
+    margin: 12px 12px 9px 12px;
+}
+
 
 .menu-close {
-    display: none;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    margin: 12px 12px 12px 12px;
 }
 
 
@@ -173,7 +181,6 @@ section {
 .sobre {
     display: flex;
     background-color: white;
-
 }
 
 .staff {
@@ -214,7 +221,7 @@ footer {
 
     .btn-menu-mobile {
         display: block;
-        
+        cursor: pointer;
     }
 
     .menu {
