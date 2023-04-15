@@ -185,12 +185,14 @@ section {
     background-position: center center;
     display: flex;
     align-items: center;
+    height: 400px;
 }
 
 
 .sobre {
     display: flex;
     background-color: white;
+    height: 400px;
 }
 
 .staff {
@@ -262,6 +264,9 @@ footer {
         background-size: cover;
         background-position: fixed;
         background-attachment: local;
+    }
+    .sobre {
+        height: 500px;
     }
 
     .conteudo {
