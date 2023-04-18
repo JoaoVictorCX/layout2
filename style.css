@@ -95,14 +95,21 @@ header > img {
 
 h1 {
     font-family: var(--title);
-    font-size: 3em;
+    font-size: 5vw;
      color: white;
 }
 
 .conteudo {
     width: 800px;
-    margin: auto;
+    margin-inline: auto;
     display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    line-height: 1.4em;
 }
 
 .btn-verde {
@@ -137,15 +144,26 @@ h1 {
 .conteudo2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
     align-self: center;
     width: 50%;
-    text-align: left;
+    text-align: center;
+    align-items: center;
+}
+
+.coach {
+    display: flex;
+    align-items: center;
+}
+
+.slide {
+    display: flex;
+    overflow-x: scroll;
 }
 
 h2 {
     margin-top: 10px;
     margin-bottom: 10px;
+    text-align: center;
 }
 .conteudo2 > h2 {
     width: 100%;
@@ -185,23 +203,26 @@ section {
     background-position: center center;
     display: flex;
     align-items: center;
-    height: 400px;
+    min-height: 80vh;
 }
 
 
 .sobre {
     display: flex;
     background-color: white;
-    height: 400px;
+    min-height: 80vh;
 }
+
 
 .staff {
     background: url('img/background2.png') center center no-repeat fixed;
     background-size: cover; 
-    display: flex;
-    align-items: center;
     background-color: black;
+    min-height: 80vh;
     color: white;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .contato {
@@ -236,6 +257,10 @@ footer {
         cursor: pointer;
     }
 
+    h1 {
+        font-size: 12vw;
+    }
+
     .menu {
         justify-content: right;
     }
@@ -265,15 +290,16 @@ footer {
         background-position: fixed;
         background-attachment: local;
     }
-    .sobre {
-        height: 500px;
-    }
+
 
     .conteudo {
         width: 100%;
         flex-direction: column;
         text-align: center;
+
     }
+
+ 
     .conteudo1 {
         width: 100%;
     }
