@@ -1,14 +1,16 @@
 
 @import url('https://fonts.cdnfonts.com/css/akira-expanded');
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
 
 :root {
     --title: 'Akira Expanded';
+    --content: 'Proxima Nova';
 }
 
 * {
     padding: 0px;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Proxima Nova', sans-serif;
 }
 
 main {
@@ -106,6 +108,54 @@ h1 {
     gap: 40px;
     justify-content: center;
     align-items: center;
+    font-weight: lighter;
+    letter-spacing: 0.02em;
+}
+
+.caixa-workout{
+    padding: 10px;
+}
+
+.partes-wod {
+    display: flex;
+    gap: 10px;
+}
+
+.wod {
+    background-color: greenyellow;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 0.9em;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+
+}
+.caixa-horario {
+
+}
+
+.horarios {
+    border-radius: 15px;
+    display: flex;
+    gap: 3px;
+    max-width: 29vh;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hora {
+    display: flex;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    font-size: 0.9em;
+    align-items: center;
+    justify-content: center;
+
 }
 
 p {
