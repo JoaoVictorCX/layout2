@@ -68,9 +68,9 @@
                     
                     <div class="caixa-workout">
                         <div class="partes-wod">
-                            <div class="wod">Warm-up</div>
-                            <div class="wod">Skill</div>
-                            <div class="wod">Workout</div>
+                            <div class="wod" title="Aquecimento">Warm-up</div>
+                            <div class="wod" title="Técnica/Fortalecimento">Skill</div>
+                            <div class="wod" title="Treino">Workout</div>
                         </div>                         
                     </div>
 
@@ -95,38 +95,46 @@
 
         <section class="staff">
             <a class="ancora" id="staff"></a>
-            <div class="conteudo"> <h2>STAFF</h2> </div>
-
-            <div class="conteudo">
+            <div style="flex-direction: column; text-align: center; gap: 0;" class="conteudo">
+                <h2>STAFF</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ullam quam numquam ab aut. Temporibus exercitationem, optio harum laboriosam quibusdam dolorem ullam dignissimos ea, deleniti corrupti fugit delectus earum architecto.</p>
+            </div>
+            <div style="flex-grow: 1;" class="conteudo">
                 <div class="carrossel">
-                    <button><p>&#60</p></button>
-                    <div class="slide">
-                        <div style="" id="coach1" class="coach">
-                            <div data-aos="zoom-in-right" class="conteudo1">
-                                <h3>Fernanda Moraes</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ullam quam numquam ab aut. Temporibus exercitationem, optio harum laboriosam quibusdam dolorem ullam dignissimos ea, deleniti corrupti fugit delectus earum architecto.</p>
-                            </div>
-                            <div data-aos="zoom-in-left" class="conteudo2">
-                                <img src="img/joao.png" width="350px" alt="foto-joao">
-                            </div>
+                    <div id="coach1" class="coach">
+                        <div data-aos="zoom-in-right" class="conteudo1">
+                            <h3>Fernanda Moraes</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ullam quam numquam ab aut. Temporibus exercitationem, optio harum laboriosam quibusdam dolorem ullam dignissimos ea, deleniti corrupti fugit delectus earum architecto.</p>
                         </div>
-                        <!-- 
-                        <div style="background-color: red;" id="coach2" class="coach">
-                            <div data-aos="zoom-in-right" class="conteudo1">
-                                <h3>Fernanda Moraes</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ullam quam numquam ab aut. Temporibus exercitationem, optio harum laboriosam quibusdam dolorem ullam dignissimos ea, deleniti corrupti fugit delectus earum architecto.</p>
-                            </div>
-                            <div data-aos="zoom-in-left" class="conteudo2">
-                                <img src="img/joao.png" width="350px" alt="foto-joao">
-                            </div>
-                        
+                        <div data-aos="zoom-in-left" class="conteudo2">
+                            <img class="img-coach" src="img/fer.png" alt="foto-fernanda">
                         </div>
-                        -->
                     </div>
-                    <button><p>&#62</p></button>
+                    <div id="coach2" class="coach">
+                        <div data-aos="zoom-in-right" class="conteudo1">
+                            <h3>João Victor Coelho</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ullam quam numquam ab aut. Temporibus exercitationem, optio harum laboriosam quibusdam dolorem ullam dignissimos ea, deleniti corrupti fugit delectus earum architecto.</p>
+                        </div>
+                        <div data-aos="zoom-in-left" class="conteudo2">
+                            <img class="img-coach" src="img/joao.png" alt="foto-joao">
+                        </div>
+                    </div>
+                    <div id="coach3" class="coach">
+                        <div data-aos="zoom-in-right" class="conteudo1">
+                            <h3>Izabela Oliveira</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ullam quam numquam ab aut. Temporibus exercitationem, optio harum laboriosam quibusdam dolorem ullam dignissimos ea, deleniti corrupti fugit delectus earum architecto.</p>
+                        </div>
+                        <div data-aos="zoom-in-left" class="conteudo2">
+                            <img class="img-coach" src="img/iza.png" alt="foto-izabela">
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-carrossel">
+                    <a href="#coach1"></a>
+                    <a href="#coach2"></a>
+                    <a href="#coach3"></a>
                 </div>
             </div>
-
         </section>
         
         <section class="contato">

@@ -112,6 +112,7 @@ h1 {
     align-items: center;
     font-weight: lighter;
     letter-spacing: 0.02em;
+    position: relative;
 }
 
 .caixa-workout{
@@ -202,15 +203,7 @@ p {
     align-items: center;
 }
 
-.coach {
-    display: flex;
-    align-items: center;
-}
 
-.slide {
-    display: flex;
-    overflow-x: scroll;
-}
 
 h2 {
     margin-top: 10px;
@@ -225,7 +218,58 @@ h2 {
     width: 100%;
 }
 
+.carrossel {
+    display: grid;
+    grid-auto-flow: column;
+    width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-behavior: smooth;
+    scroll-snap-type: inline mandatory;
+}
 
+.carrossel::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-carrossel {
+    display: flex;
+    position: absolute;
+    gap: 10px;
+    bottom: 0px;
+}
+
+.nav-carrossel a {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: white;
+    opacity: 0.5;
+    transition: opacity ease 250ms;
+}
+
+.nav-carrossel a:hover {
+    opacity: 1;
+}
+
+.coach {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width: 760px;
+    scroll-snap-align: start;
+    gap: 20px;
+}
+
+.coach > .conteudo2 {
+    overflow: hidden;
+}
+
+
+.img-coach {
+    width: 100%; 
+}
 
 .maps {
     display: flex;
@@ -290,6 +334,7 @@ section {
     position: relative;
     top: -160px;
 
+
 }
 
 footer {
@@ -305,6 +350,14 @@ footer {
 
 
 @media (max-width: 765px) {
+    .carrossel {
+        width: 340px;
+    }
+
+    .coach {
+        flex-direction: column-reverse;
+        width: 300px;
+    }
 
     .btn-menu-mobile {
         display: block;
@@ -353,6 +406,9 @@ footer {
 
     }
 
+    .nav-carrossel {
+        bottom: -20px;
+    }
  
     .conteudo1 {
         width: 100%;
@@ -365,11 +421,6 @@ footer {
     .conteudo1 > img {
         width: 250px;
         margin-bottom: 20px;
-    }
-
-    .conteudo2 > img {
-        width: 250px;
-        margin-top: 30px;
     }
 
     .maps {
