@@ -88,6 +88,8 @@ header > img {
     transition: 0.5s;
 }
 
+
+
 .menu {
     flex-grow: 1;
     display: flex;
@@ -254,7 +256,9 @@ section {
     display: flex;
     align-items: center;
     min-height: 80vh;
+    color: white;
 }
+
 
 
 .sobre {
