@@ -50,20 +50,17 @@ nav {
 }
 
 .menu-open {
-    margin: 12px 12px 9px 12px;
+    margin: 12px 12px 7px 12px;
 }
-
 
 .menu-close {
     display: none;
     justify-content: center;
     align-items: center;
-    width: 32px;
-    height: 32px;
+    width: 22px;
+    height: 22px;
     margin: 12px 12px 12px 12px;
 }
-
-
 
 a {
     text-decoration: none;
@@ -71,8 +68,8 @@ a {
 }
 
 header > img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     
 }
 
@@ -223,7 +220,8 @@ h2 {
     grid-auto-flow: column;
     width: 100%;
     overflow-x: auto;
-    overscroll-behavior-inline: contain;
+    overflow-y: hidden;
+    overscroll-behavior: none;
     scroll-behavior: smooth;
     scroll-snap-type: inline mandatory;
 }
@@ -286,6 +284,7 @@ h2 {
     margin-top: 20px;
     display: flex;
     gap: 20px;
+    justify-content: center;
 }
 
 section {
@@ -293,13 +292,13 @@ section {
 }
 
 .home {
-    margin-top: 100px;
+    margin-top: 0px;
     background: url('img/background1.png') center center no-repeat fixed;
     background-size: cover; 
     background-position: center center;
     display: flex;
     align-items: center;
-    min-height: 80vh;
+    min-height: 90vh;
     color: white;
 }
 
@@ -312,6 +311,7 @@ section {
 }
 
 
+
 .staff {
     background: url('img/background2.png') center center no-repeat fixed;
     background-size: cover; 
@@ -322,6 +322,20 @@ section {
     display: flex;
     flex-direction: column;
 }
+
+.media {
+    color: white;
+    background-color: rgb(83, 83, 83);
+
+}
+
+.media-grid {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
 
 .contato {
     display: flex;
@@ -372,8 +386,10 @@ footer {
         justify-content: right;
     }
 
-    .sobre .conteudo1 > img {
-        display: none;
+    header > img {
+        width: 46px;
+        height: 46px;
+        
     }
 
     .menu-mobile {
@@ -400,6 +416,10 @@ footer {
         background-size: cover;
         background-position: fixed;
         background-attachment: local;
+    }
+
+    .post2 {
+        display: none;
     }
 
 
