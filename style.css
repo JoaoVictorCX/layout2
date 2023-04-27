@@ -29,7 +29,6 @@ header {
     right: 0px;
     top: 0px;
     background-color: white;
-
 }
 
 nav {
@@ -38,8 +37,6 @@ nav {
     align-items: center;
     align-self: center;
 }
-
-
 
 .btn-menu-mobile {
     z-index: 100;
@@ -85,8 +82,6 @@ header > img {
     transition: 0.5s;
 }
 
-
-
 .menu {
     flex-grow: 1;
     display: flex;
@@ -131,9 +126,6 @@ h1 {
     justify-content: center;
 
 }
-.caixa-horario {
-
-}
 
 .horarios {
     border-radius: 15px;
@@ -176,9 +168,11 @@ p {
     background-color: black;
     color: white;
 }
+
 .btn-verde > a {
     color: black;
 }
+
 .btn-verde:hover > a {
     color: white;
 }
@@ -200,13 +194,12 @@ p {
     align-items: center;
 }
 
-
-
 h2 {
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
 }
+
 .conteudo2 > h2 {
     width: 100%;
 }
@@ -264,20 +257,8 @@ h2 {
     overflow: hidden;
 }
 
-
 .img-coach {
     width: 100%; 
-}
-
-.maps {
-    display: flex;
-    width: 50%; 
-    align-items: left;
-}
-
-.maps > iframe {
-    width: 80%;
-    height: 100%;
 }
 
 .icon-media {
@@ -302,15 +283,11 @@ section {
     color: white;
 }
 
-
-
 .sobre {
     display: flex;
     background-color: white;
     min-height: 80vh;
 }
-
-
 
 .staff {
     background: url('img/background2.png') center center no-repeat fixed;
@@ -336,19 +313,21 @@ section {
     gap: 20px;
 }
 
-
 .contato {
     display: flex;
     background-color: rgb(49, 49, 49);
     color: white;
 }
 
-.ancora {
-    display: block;
-    position: relative;
-    top: -160px;
+.maps {
+    display: flex;
+    width: 50%; 
+    align-items: left;
+}
 
-
+.maps > iframe {
+    width: 80%;
+    height: 100%;
 }
 
 footer {
@@ -360,8 +339,13 @@ footer {
     justify-content: center;
 }
 
+.ancora {
+    display: block;
+    position: relative;
+    top: -160px;
 
 
+}
 
 @media (max-width: 800px) {
     .carrossel {
