@@ -17,6 +17,22 @@ main {
     background-color: grey;
 }
 
+.btn-whats {
+    z-index: 1000;
+    position: fixed;
+    width: 50px;
+    bottom: 30px;
+    right: 30px;
+    filter:drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.295));
+    opacity: 0.7;
+    transition: 250ms;
+    cursor: pointer;
+}
+
+.btn-whats:hover {
+    opacity: 1;
+}
+
 header {
     z-index: 99;
     display: flex;
@@ -64,7 +80,7 @@ a {
     color: white;
 }
 
-header > img {
+.logo {
     width: 60px;
     height: 60px;
     
@@ -270,6 +286,7 @@ h2 {
 
 section {
     padding: 50px 20px 50px 20px;
+    position: relative;
 }
 
 .home {
@@ -341,19 +358,24 @@ footer {
 
 .ancora {
     display: block;
-    position: relative;
-    top: -160px;
-
+    position: absolute;
+    top: -60px;
 
 }
 
 @media (max-width: 800px) {
+    .btn-whats {
+        bottom: 15px;
+        right: 15px;
+    }
+
     .carrossel {
         width: 340px;
     }
 
     .coach {
         flex-direction: column-reverse;
+        justify-content: flex-end;
         width: 300px;
     }
 
@@ -370,10 +392,9 @@ footer {
         justify-content: right;
     }
 
-    header > img {
+    .logo {
         width: 46px;
         height: 46px;
-        
     }
 
     .menu-mobile {
