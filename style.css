@@ -236,6 +236,10 @@ h2 {
     overscroll-behavior: none;
     scroll-behavior: smooth;
     scroll-snap-type: inline mandatory;
+    background-color: rgba(255, 255, 255, 0.055);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px); 
+    border-radius: 20px;
 }
 
 .carrossel::-webkit-scrollbar {
@@ -270,6 +274,7 @@ h2 {
     width: 760px;
     scroll-snap-align: start;
     gap: 20px;
+
 }
 
 .coach > .conteudo2 {
@@ -404,7 +409,7 @@ footer {
         display: none;
         background-color: rgba(255, 255, 255, 0.918);
         backdrop-filter: blur(7.5px);
-        -webkit-backdrop-filter: blur(7.5px); ;
+        -webkit-backdrop-filter: blur(7.5px); 
         position: fixed;
         top: 0;
         left: 0;
