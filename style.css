@@ -94,11 +94,12 @@ a {
     color: black;
     font-weight: bold;
     padding: 15px;
+    transition: 0.5s;
 }
 
 .btn-menu:hover {
     background-color: greenyellow;
-    transition: 0.5s;
+    
 }
 
 .menu {
@@ -111,7 +112,6 @@ a {
 h1 {
     font-family: var(--title);
     font-size: 5vw;
-     color: white;
 }
 
 .conteudo {
@@ -301,7 +301,7 @@ section {
 
 .home {
     margin-top: 0px;
-    background: url('img/background1.png') center center no-repeat fixed;
+    background: linear-gradient(90deg, black, transparent 100%), url(img/background1.png) center center no-repeat fixed;
     background-size: cover; 
     background-position: center center;
     display: flex;
@@ -312,8 +312,81 @@ section {
 
 .sobre {
     display: flex;
-    background-color: white;
+    flex-direction: column;
+    background: linear-gradient(90deg, white, transparent 100%), url(img/paper.jpg);
+    background-size: cover;
+    background-position: center center;
     min-height: 80vh;
+    justify-content: center;
+}
+
+.conteudo-sobre {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    width: 70%;
+    margin-right: auto;
+    
+}
+
+.paragrafo {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    font-weight: 300;
+}
+
+.destaque {
+    background-color: greenyellow;
+}
+
+.conteudo-sobre > h1 {
+    line-height: 60px;
+}
+
+.aula {
+    background-color: lightgrey;
+}
+
+.conteudo-aula {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.card {
+    background-color: greenyellow;
+    width: 220px;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.card > h3 {
+    font-size: 1.5em;
+    margin-block-end: -5px;
+}
+
+.card > p {
+    font-size: 0.8em;
+    font-weight: 300;
+    
+}
+
+.card:hover {
+    background-color: rgb(156, 235, 38);
+    
+}
+
+.icon {
+    width: 80px;
+    aspect-ratio: 1/1;
+    margin-bottom: 20px;
 }
 
 .staff {
@@ -442,13 +515,30 @@ footer {
     .post2 {
         display: none;
     }
-
+    
+    .conteudo-aula {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 
     .conteudo {
         width: 100%;
         flex-direction: column;
         text-align: center;
 
+    }
+
+    .conteudo-sobre {
+        margin-right: 0;
+        width: 80%;
+        text-align: left;
+    }
+
+    .conteudo-sobre > h1 {
+        margin-top: 10px;
+        line-height: 0.9em;
+        font-size: 2.5em;
     }
 
     .nav-carrossel {
