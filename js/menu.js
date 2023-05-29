@@ -15,16 +15,22 @@ function toggle(){
     }
 }
 
+
 function CloseMenu (){
     nav.classList.remove('showmenu')
     btMenuOpen.style.display = 'block'
     btMenuClose.style.display = 'none'
 }
 
+
 function AddEventsMenu (item){
     item.addEventListener('click', CloseMenu)
 }
 
+
+
 btn.addEventListener('click',toggle)
 menuitens.forEach(AddEventsMenu)
+
+
 

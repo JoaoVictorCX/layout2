@@ -357,15 +357,38 @@ section {
 }
 
 .card {
+    color: black;
     background-color: greenyellow;
     width: 220px;
     aspect-ratio: 1/1;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo1-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: 0.3s;
 }
+
+.conteudo1-card > p {
+    font-weight: 300;
+}
+
+
+.conteudo2-card {
+    display: none;
+    padding: 20px 20px 20px 20px;
+    text-align: left;
+    font-weight: 300;
+}
+
+.bold {
+    font-weight: bold;
+}
+
 
 .card > h3 {
     font-size: 1.5em;
