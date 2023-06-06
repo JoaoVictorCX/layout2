@@ -310,12 +310,14 @@ section {
     color: white;
 }
 
+
 .sobre {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(90deg, white, transparent 100%), url(img/paper.jpg);
+    background: url(img/paper-divisor.png), 
+    linear-gradient(90deg, black, transparent 100%), 
+    url(img/background1.png) center center no-repeat fixed;
     background-size: cover;
-    background-position: center center;
     min-height: 80vh;
     justify-content: center;
 }
@@ -377,6 +379,13 @@ section {
     font-weight: 300;
 }
 
+.card-active > .conteudo1-card {
+    display: none;
+}
+
+.card-active > .conteudo2-card {
+    display: flex;
+}
 
 .conteudo2-card {
     display: none;
@@ -398,12 +407,6 @@ section {
 .card > p {
     font-size: 0.8em;
     font-weight: 300;
-    
-}
-
-.card:hover {
-    background-color: rgb(156, 235, 38);
-    
 }
 
 .icon {
