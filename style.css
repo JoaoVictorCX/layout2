@@ -16,10 +16,6 @@
 body {
 }
 
-main {
-    background-color: grey;
-}
-
 .btn-whats {
     z-index: 1000;
     position: fixed;
@@ -299,11 +295,23 @@ section {
     position: relative;
 }
 
-.home {
-    margin-top: 0px;
+.home::before {
+    content: "";
+    width: 100%;
+    height: 100lvh;
     background: linear-gradient(90deg, black, transparent 100%), url(img/background1.png) center center no-repeat fixed;
     background-size: cover; 
     background-position: center center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+}
+
+.home {
+    margin-top: 0px;
+    
     display: flex;
     align-items: center;
     min-height: 90vh;
@@ -532,11 +540,18 @@ footer {
     }
 
     .home {
+        /*
         height: 420px;
         background-size: cover;
         background-position: fixed;
         background-attachment: local;
+        */
     }
+
+    .media > .conteudo {
+        display: none;
+    }
+
 
     .post2 {
         display: none;
