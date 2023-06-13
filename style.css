@@ -441,16 +441,23 @@ section {
 }
 
 .media {
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0px;
     color: white;
     background-color: rgb(83, 83, 83);
-
 }
 
-.media-grid {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.media > img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.media > img:hover {
+    transform: scale(1.05);
 }
 
 .contato {
@@ -487,6 +494,11 @@ footer {
 }
 
 @media (max-width: 800px) {
+
+    .media {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .btn-whats {
         bottom: 15px;
         right: 15px;
@@ -546,10 +558,6 @@ footer {
         background-position: fixed;
         background-attachment: local;
         */
-    }
-
-    .media > .conteudo {
-        display: none;
     }
 
 
